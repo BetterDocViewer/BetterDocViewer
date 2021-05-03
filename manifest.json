@@ -1,0 +1,20 @@
+{
+   "content_scripts": [ {
+      "js": [ "switch.js" ],
+      "matches": [ "http://*.instructure.com/*", "https://*.instructure.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Fix common Canvas DocViewer errors",
+   "icons": {
+      "512": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgMJ5DJULh6L3uP20WQbFTfgVLBaXXThpCPdKzfHee9MESRGDWVZnZLdtI2NzJVCEnCnxIdBtu43ly1uH1ijlowzFRELYDxTmHBImMDlr9RLyvsrKknahVub/to/nSMFw0iZXWkmquecrnYHFEAKjaeBa07qD8mJBVqVez51c2Usy+8cJrnpxFn8MlkybqXk0KKTSxzFM/aGVbvVh6elosozWvw1AS11hj9wUNnyTxxLumo2Ix6yuCXeuvxVvYXhARf0fensCAmO7WG9OUb0khq7veKAg5S35eWrmnr4Ypk89NbdwQ8OFE3zIh5m+j38BQVk2j0awl2tpo+UY8KfeJQIDAQAB",
+   "manifest_version": 3,
+   "name": "BetterDocViewer",
+   "host_permissions": [ "http://*.instructure.com/*", "https://*.instructure.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.0",
+   "action": {
+     "default_popup": "index.html"
+   }
+}
